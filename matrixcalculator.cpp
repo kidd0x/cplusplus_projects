@@ -6,7 +6,6 @@
 using namespace std;
 
 #define MAX 10
-#define SWAP(a, b) { a = a ^ b; b = a ^ b; a = a ^ b; }
 
 struct
 {
@@ -24,8 +23,8 @@ int main()
 
     if(Mx.r > MAX || Mx.c > MAX)
     {
-        Mx.r = 5;
-        Mx.c = 5;
+        Mx.r = MAX;
+        Mx.c = MAX;
     }
 
     cout << "Introdu numerele din Matricea I : \n";
