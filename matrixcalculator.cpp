@@ -15,10 +15,10 @@ struct
 
 int main()
 {
-    cout << "Introdu nr de randuri : ";
+    printf("Introdu numarul de randuri (maxim %d) : ", MAX);
     cin >> Mx.r;
 
-    cout << "Introdu nr de coloane : ";
+    printf("Introdu numarul de coloane (maxim %d) : ", MAX);
     cin >> Mx.c;
 
     if(Mx.r > MAX || Mx.c > MAX)
@@ -27,7 +27,8 @@ int main()
         Mx.c = MAX;
     }
 
-    cout << "Introdu numerele din Matricea I : \n";
+    cout << endl;
+    printf("Introdu numerele din Matricea I : \n");
     for(Mx.i = 0; Mx.i < Mx.r; Mx.i++)
     {
         for(Mx.j = 0; Mx.j < Mx.c; Mx.j++)
@@ -37,7 +38,8 @@ int main()
         }
     }
 
-    cout << "Introdu numerele din Matricea II : \n";
+    cout << endl;
+    printf("Introdu numerele din Matricea II : \n");
     for(Mx.i = 0; Mx.i < Mx.r; Mx.i++)
     {
         for(Mx.j = 0; Mx.j < Mx.c; Mx.j++)
@@ -50,10 +52,10 @@ int main()
     cout << endl;
     char choice;
 
-    cout << "Alege o optiune:\n";
-    cout << "1. Aduna Matricele\n";
-    cout << "2. Scade Matricele\n";
-    cout << "3. Inmulteste Matricele\n";
+    printf("Alege o optiune : \n");
+    printf("1. Aduna Matricele\n");
+    printf("2. Scade Matricele\n");
+    printf("3. Inmulteste Matricele\n");
 
     choice = _getch();
 
@@ -85,16 +87,15 @@ int main()
         }
     }
 
+
     for(Mx.i = 0; Mx.i < Mx.r; Mx.i++)
     {
         for(Mx.j = 0; Mx.j < Mx.c; Mx.j++)
         {
             cout << "\t" << Mx.MX[2][Mx.i][Mx.j] << " ";
         }
-
         cout << endl;
     }
-
     return 0;
 }
 
