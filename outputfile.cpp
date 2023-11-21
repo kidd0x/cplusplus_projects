@@ -12,7 +12,7 @@ bool isValidEmail(const string& email)
 
 int main() {
     string filename = "Info.txt";
-    ofstream outputFile(filename, ios::app); // ios::app appends to the file
+    ofstream outputFile(filename, ios::app);
 
     if (!outputFile.is_open()) {
         cerr << "Fisierul " << filename << "nu a putut fi deschis !" << endl;
